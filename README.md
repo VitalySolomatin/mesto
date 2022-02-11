@@ -6,4 +6,4 @@
 
 # H4 Проект был полностью выполнен Соломатиным Виталием в феврале 2022 года.
 
-# H4 Ознакомиться с проектном вы можете по ссылке [https://vitalysolomatin.github.io/mesto/index.htnl]
+# H4 Ознакомиться с проектном вы можете по ссылке [https://vitalysolomatin.github.io/mesto/]
