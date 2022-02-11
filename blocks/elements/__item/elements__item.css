@@ -1,0 +1,9 @@
+.elements__item {
+    width: 282px;
+    min-height: 361px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+}
