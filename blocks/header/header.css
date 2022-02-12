@@ -1,6 +1,6 @@
 .header {
     width: 880px;
-    height: 73px;
+    min-height: 73px;
     border-bottom: 1px solid rgba(84, 84, 84, 0.7);
     margin-top: 45px;
 }
@@ -15,7 +15,7 @@
     .header {
         max-width: 282px;
         margin-top: 28px;
-        max-height: 55px;
+        min-height: 56px;
     }
 }
 

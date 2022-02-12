@@ -18,79 +18,82 @@
     <main>
 
         <section class="profile">
-            <img class="profile__avatar" src="./images/avatar.svg" alt="Фотография Жак-Ив Кусто">
+            <img class="profile__avatar" src="./images/avatar.jpg" alt="Фотография Жак-Ив Кусто">
             <div class="profile__info">
                 <h1 class="profile__title">Жак-Ив Кусто</h1>
-                <div class="profile__button-edit">
-                    <img class="profile__button-edit-image" src="./images/editButton.svg"
-                        alt="иконка изменения информации">
-                </div>
-                <h2 class="profile__subtitle">Исследователь океана</h2>
-            </div>
-            <div class="profile__button-add">
-                <img class="profile__button-add-image" src="./images/addButton.svg" alt="иконка добавления информации">
+                <button class="profile__button-edit" type="submit">
 
+                </button>
+
+                <p class="profile__subtitle">Исследователь океана</p>
             </div>
+
+            <button class="profile__button-add" type="submit">
+
+            </button>
 
         </section>
 
         <section class="elements">
             <div class="elements__item">
-                <img class="elements__image" src="./images/karachaevsk.jpg" alt="Картинка Карачаевск">
+                <img class="elements__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
                 <h3 class="elements__title">Карачаевск</h3>
-                <img class="elements__like elements-change" src="./images/like.svg" alt="иконка нравится">
+                <button class="elements__like" type="submit"></button>
             </div>
 
             <div class="elements__item">
-                <img class="elements__image" src="./images/GoraElbrus.jpg" alt="Картинка горы Эльбрус">
+                <img class="elements__image" src="./images/GoraElbrus.jpg" alt="горы Эльбрус">
                 <h3 class="elements__title">Гора Эльбрус</h3>
-                <img class="elements__like elements-change" src="./images/like.svg" alt="иконка нравится">
+                <button class="elements__like" type="submit"></button>
             </div>
 
             <div class="elements__item">
-                <img class="elements__image" src="./images/dombai.jpg" alt="Картинка Домбай">
+                <img class="elements__image" src="./images/dombai.jpg" alt="Домбай">
                 <h3 class="elements__title">Домбай</h3>
-                <img class="elements__like elements-change" src="./images/like.svg" alt="иконка нравится">
+                <button class="elements__like" type="submit"></button>
             </div>
 
             <div class="elements__item">
-                <img class="elements__image" src="./images/GoraElbrus.jpg" alt="Картинка горы Эльбрус">
+                <img class="elements__image" src="./images/GoraElbrus.jpg" alt="горы Эльбрус">
                 <h3 class="elements__title">Гора Эльбрус</h3>
-                <img class="elements__like elements-change" src="./images/like.svg" alt="иконка нравится">
+                <button class="elements__like" type="submit"></button>
             </div>
 
             <div class="elements__item">
-                <img class="elements__image" src="./images/dombai.jpg" alt="Картинка Домбай">
+                <img class="elements__image" src="./images/dombai.jpg" alt="Домбай">
                 <h3 class="elements__title">Домбай</h3>
-                <img class="elements__like elements-change" src="./images/like.svg" alt="иконка нравится">
+                <button class="elements__like" type="submit"></button>
             </div>
 
             <div class="elements__item">
-                <img class="elements__image" src="./images/karachaevsk.jpg" alt="Картинка Карачаевск">
+                <img class="elements__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
                 <h3 class="elements__title">Карачаево-Черкессия</h3>
-                <img class="elements__like elements-change" src="./images/like.svg" alt="иконка нравится">
+                <button class="elements__like" type="submit"></button>
             </div>
-
-        </section>
-
-        <section class="popup">
-            <form class="popup__container">
-                <img class="popup__close" src="./images/popapClose.svg" alt="иконка добавления информации">
-                <h2 class="popup__title">Редактировать профиль</h2>
-                <input class="popup__field popup__field_text" type="text" name="nameInput" value="Жак-Ив Кусто"
-                    required>
-                <input class="popup__field popup__field_text" type="text" name="jobInput" value="Исследователь океана"
-                    required>
-                <button class="popup__button-submit popup__button-submit_title" type="submit">Сохранить</button>
-            </form>
 
         </section>
 
     </main>
 
     <footer class="footer">
-        <h4 class="footer__title">© 2020 Mesto Russia</h4>
+        <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
+
+    <div class="popup">
+        <div class="popup__container">
+            <h2 class="popup__title">Редактировать профиль</h2>
+            <img class="popup__close" src="./images/popapClose.svg" alt="иконка добавления информации">
+            <form name="form">
+                <input class="popup__field popup__field_nameInput" type="text" name="nameInput"
+                    placeholder="Введите фамилию" required>
+                <input class="popup__field popup__field_jobInput" type="text" name="jobInput"
+                    placeholder="Введите заголовок" required>
+                <button class="popup__button-submit" type="submit">Сохранить</button>
+            </form>
+        </div>
+
+    </div>
+
     <script src="./scripts/index.js"></script>
 </body>
 
