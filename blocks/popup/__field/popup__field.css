@@ -11,6 +11,11 @@
     margin: 0 34px 30px;
 }
 
+.popup__field:focus {
+    outline: none;
+    box-shadow: 0 0 0 2px darkorange;
+}
+
 .popup__field:last-of-type {
     margin: 0 34px 0px;
 }
