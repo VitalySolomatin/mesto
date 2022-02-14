@@ -2,12 +2,12 @@
     background: none;
     background-image: url(../../../images/popapClose.svg);
     border: none;
-    position: fixed;
+    position: absolute;
     width: 32px;
     height: 32px;
-    margin-top: -150px;
-    margin-left: 438px;
-}
+    top: -39px;
+    left: 438px;
+    }
 
 .popup__close:hover {
     opacity: 0.6;
@@ -20,7 +20,7 @@
         background-image: url(../../../images/popapCloseSmall.svg);
         width: 20px;
         height: 20px;
-        margin-top: -157px;
-        margin-left: 262px;
+        top: -37px;
+        left: 262px;
     }
 }
