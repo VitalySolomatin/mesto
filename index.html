@@ -21,14 +21,14 @@
             <img class="profile__avatar" src="./images/avatar.jpg" alt="Фотография Жак-Ив Кусто">
             <div class="profile__info">
                 <h1 class="profile__title">Жак-Ив Кусто</h1>
-                <button class="profile__button-edit" type="submit">
+                <button aria-label="Изменить" class="profile__button-edit" type="button">
 
                 </button>
 
                 <p class="profile__subtitle">Исследователь океана</p>
             </div>
 
-            <button class="profile__button-add" type="submit">
+            <button aria-label="Добавить" class="profile__button-add" type="button">
 
             </button>
 
@@ -38,37 +38,37 @@
             <div class="elements__item">
                 <img class="elements__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
                 <h3 class="elements__title">Карачаевск</h3>
-                <button class="elements__like" type="submit"></button>
+                <button aria-label="Нравится" class="elements__like" type="button"></button>
             </div>
 
             <div class="elements__item">
                 <img class="elements__image" src="./images/GoraElbrus.jpg" alt="горы Эльбрус">
                 <h3 class="elements__title">Гора Эльбрус</h3>
-                <button class="elements__like" type="submit"></button>
+                <button aria-label="Нравится" class="elements__like" type="button"></button>
             </div>
 
             <div class="elements__item">
                 <img class="elements__image" src="./images/dombai.jpg" alt="Домбай">
                 <h3 class="elements__title">Домбай</h3>
-                <button class="elements__like" type="submit"></button>
+                <button aria-label="Нравится" class="elements__like" type="button"></button>
             </div>
 
             <div class="elements__item">
                 <img class="elements__image" src="./images/GoraElbrus.jpg" alt="горы Эльбрус">
                 <h3 class="elements__title">Гора Эльбрус</h3>
-                <button class="elements__like" type="submit"></button>
+                <button aria-label="Нравится" class="elements__like" type="button"></button>
             </div>
 
             <div class="elements__item">
                 <img class="elements__image" src="./images/dombai.jpg" alt="Домбай">
                 <h3 class="elements__title">Домбай</h3>
-                <button class="elements__like" type="submit"></button>
+                <button aria-label="Нравится" class="elements__like" type="button"></button>
             </div>
 
             <div class="elements__item">
                 <img class="elements__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
                 <h3 class="elements__title">Карачаево-Черкессия</h3>
-                <button class="elements__like" type="submit"></button>
+                <button aria-label="Нравится" class="elements__like" type="button"></button>
             </div>
 
         </section>
@@ -82,13 +82,13 @@
     <div class="popup">
         <div class="popup__container">
             <h2 class="popup__title">Редактировать профиль</h2>
-            <img class="popup__close" src="./images/popapClose.svg" alt="иконка добавления информации">
+            <button aria-label="Закрыть" class="popup__close" type="button"></button>
             <form name="form">
-                <input class="popup__field popup__field_nameInput" type="text" name="nameInput"
+                <input class="popup__field popup__field_type_name" type="text" name="nameInput"
                     placeholder="Введите фамилию" required>
-                <input class="popup__field popup__field_jobInput" type="text" name="jobInput"
+                <input class="popup__field popup__field_type_job" type="text" name="jobInput"
                     placeholder="Введите заголовок" required>
-                <button class="popup__button-submit" type="submit">Сохранить</button>
+                <button aria-label="Сохранить" class="popup__button-submit" type="submit">Сохранить</button>
             </form>
         </div>
 

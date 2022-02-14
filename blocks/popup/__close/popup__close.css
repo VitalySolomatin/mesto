@@ -1,8 +1,11 @@
 .popup__close {
-    position: absolute;
+    background: none;
+    background-image: url(../../../images/popapClose.svg);
+    border: none;
+    position: fixed;
     width: 32px;
     height: 32px;
-    margin-top: -151px;
+    margin-top: -150px;
     margin-left: 438px;
 }
 
@@ -14,9 +17,10 @@
 
 @media screen and (max-width: 620px) {
     .popup__close {
+        background-image: url(../../../images/popapCloseSmall.svg);
         width: 20px;
         height: 20px;
-        margin-top: -162px;
+        margin-top: -157px;
         margin-left: 262px;
     }
 }

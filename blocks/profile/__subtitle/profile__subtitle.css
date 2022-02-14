@@ -1,5 +1,5 @@
 .profile__subtitle {
-    max-width: 336px;
+    max-width: 294px;
     font-family: Inter, "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -33,6 +33,6 @@
 
 @media screen and (max-width: 320px) {
     .profile__subtitle {
-    margin: 6px 0 0;
+        margin: 6px 0 0;
     }
 }

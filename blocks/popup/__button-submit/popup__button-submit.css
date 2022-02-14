@@ -3,7 +3,7 @@
     height: 50px;
     background: #000000;
     border-radius: 2px;
-    margin: 48px 36px 31px;
+    margin: 49px 36px 37px;
     border: none;
     font-family: Inter, "Helvetica Neue", Arial, sans-serif;
     font-style: normal;
@@ -22,7 +22,7 @@
 
 @media screen and (max-width: 620px) {
     .popup__button-submit {
-        margin: 45px 22px 19px;
+        margin: 46px 22px 25px;
         width: 238px;
         height: 46px;
         font-size: 14px;
