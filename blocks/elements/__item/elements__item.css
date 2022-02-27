@@ -4,7 +4,6 @@
     background: #FFFFFF;
     border-radius: 10px;
     display: grid;
-    /* grid-template-columns: auto 1fr; */
     align-items: center;
     position: relative;
 }
