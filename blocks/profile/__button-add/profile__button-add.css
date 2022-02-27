@@ -10,6 +10,7 @@
     border-radius: 2px;
     justify-self: right;
     transition: opacity 0.4s;
+    margin-left: 244px;
 }
 
 .profile__button-add:hover {
@@ -22,6 +23,7 @@
         width: 75px;
         height: 25px;
         text-align: center;
+        margin-left: 0;
     }
 }
 

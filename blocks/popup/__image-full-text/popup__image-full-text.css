@@ -1,0 +1,10 @@
+.popup__image-full-text {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FFFFFF;
+    margin-top: 10px;
+    grid-row-start: 3;
+}

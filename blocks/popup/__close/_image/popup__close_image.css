@@ -1,0 +1,12 @@
+.popup__close_image {
+    grid-column-start: 2;
+    justify-self: end;
+    position: initial;
+}
+
+@media screen and (max-width: 620px) {
+    .popup__close_image {
+        grid-column-start: 1;
+        margin-bottom: 16px;
+    }
+}

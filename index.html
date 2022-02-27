@@ -35,43 +35,9 @@
         </section>
 
         <section class="elements">
-            <div class="elements__item">
-                <img class="elements__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                <h2 class="elements__title">Карачаевск</h2>
-                <button aria-label="Нравится" class="elements__like" type="button"></button>
-            </div>
-
-            <div class="elements__item">
-                <img class="elements__image" src="./images/GoraElbrus.jpg" alt="горы Эльбрус">
-                <h2 class="elements__title">Гора Эльбрус</h2>
-                <button aria-label="Нравится" class="elements__like" type="button"></button>
-            </div>
-
-            <div class="elements__item">
-                <img class="elements__image" src="./images/dombai.jpg" alt="Домбай">
-                <h2 class="elements__title">Домбай</h2>
-                <button aria-label="Нравится" class="elements__like" type="button"></button>
-            </div>
-
-            <div class="elements__item">
-                <img class="elements__image" src="./images/GoraElbrus.jpg" alt="горы Эльбрус">
-                <h2 class="elements__title">Гора Эльбрус</h2>
-                <button aria-label="Нравится" class="elements__like" type="button"></button>
-            </div>
-
-            <div class="elements__item">
-                <img class="elements__image" src="./images/dombai.jpg" alt="Домбай">
-                <h2 class="elements__title">Домбай</h2>
-                <button aria-label="Нравится" class="elements__like" type="button"></button>
-            </div>
-
-            <div class="elements__item">
-                <img class="elements__image" src="./images/karachaevsk.jpg" alt="Карачаевск">
-                <h2 class="elements__title">Карачаево-Черкессия</h2>
-                <button aria-label="Нравится" class="elements__like" type="button"></button>
-            </div>
 
         </section>
+
 
     </main>
 
@@ -93,6 +59,36 @@
         </div>
 
     </div>
+
+    <div class="popup" id="container-add-element">
+        <div class="popup__container">
+            <h3 class="popup__title">Новое место</h3>
+            <button aria-label="Закрыть" class="popup__close" type="button"></button>
+            <form name="form" id="formAdd">
+                <input class="popup__field popup__field_type_place" type="text" name="nameInput" placeholder="Название"
+                    required>
+                <input class="popup__field popup__field_type_link" type="text" name="jobInput"
+                    placeholder="Ссылка на картинку" required>
+                <button aria-label="Создать" class="popup__button-submit" type="submit">Создать</button>
+            </form>
+        </div>
+
+    </div>
+
+    <div class="popup" id="container-image">
+        <button aria-label="Закрыть" class="popup__close popup__close_image" type="button"></button>
+        <img class="popup__image-full" id="bigImage" src="" alt="">
+        <p class="popup__image-full-text" id="bigImageText"></p>
+    </div>
+
+    <template id="template">
+        <div class="elements__item">
+            <img class="elements__image" src="" alt="">
+            <button aria-label="Удалить" class="elements__trash" id="trash" type="button"></button>
+            <h2 class="elements__title"></h2>
+            <button aria-label="Нравится" class="elements__like" id="like" type="button"></button>
+        </div>
+    </template>
 
     <script src="./scripts/index.js"></script>
 </body>
