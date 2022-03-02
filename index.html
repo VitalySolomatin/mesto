@@ -45,7 +45,7 @@
         <p class="footer__copyright">© 2020 Mesto Russia</p>
     </footer>
 
-    <div class="popup">
+    <div class="popup popup_profile">
         <div class="popup__container">
             <h3 class="popup__title">Редактировать профиль</h3>
             <button aria-label="Закрыть" class="popup__close" type="button"></button>
@@ -60,14 +60,14 @@
 
     </div>
 
-    <div class="popup" id="container-add-element">
+    <div class="popup popup_add-element">
         <div class="popup__container">
             <h3 class="popup__title">Новое место</h3>
             <button aria-label="Закрыть" class="popup__close" type="button"></button>
             <form name="form" id="formAdd">
-                <input class="popup__field popup__field_type_place" type="text" name="nameInput" placeholder="Название"
+                <input class="popup__field popup__field_type_place" type="text" name="namePlace" placeholder="Название"
                     required>
-                <input class="popup__field popup__field_type_link" type="text" name="jobInput"
+                <input class="popup__field popup__field_type_link" type="text" name="linkPlace"
                     placeholder="Ссылка на картинку" required>
                 <button aria-label="Создать" class="popup__button-submit" type="submit">Создать</button>
             </form>
@@ -75,18 +75,18 @@
 
     </div>
 
-    <div class="popup" id="container-image">
+    <div class="popup popup_image">
         <button aria-label="Закрыть" class="popup__close popup__close_image" type="button"></button>
-        <img class="popup__image-full" id="bigImage" alt="">
-        <p class="popup__image-full-text" id="bigImageText"></p>
+        <img class="popup__image-full" src="#" alt="">
+        <p class="popup__image-full-text"></p>
     </div>
 
     <template id="template">
         <div class="elements__item">
             <img class="elements__image" alt="">
-            <button aria-label="Удалить" class="elements__trash" id="trash" type="button"></button>
+            <button aria-label="Удалить" class="elements__trash" type="button"></button>
             <h2 class="elements__title"></h2>
-            <button aria-label="Нравится" class="elements__like" id="like" type="button"></button>
+            <button aria-label="Нравится" class="elements__like" type="button"></button>
         </div>
     </template>
 
