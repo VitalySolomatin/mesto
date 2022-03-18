@@ -1,0 +1,13 @@
+.popup__field_active {
+    color: #FF0000;
+    font-family: Inter, "Helvetica Neue", Arial, sans-serif;;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    margin-left: 34px;
+}
+
+.popup__field_active:last-of-type {
+    margin-left: 34px;
+}

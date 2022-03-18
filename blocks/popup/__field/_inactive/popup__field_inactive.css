@@ -1,0 +1,19 @@
+.popup__field_inactive {
+    border-bottom: 1px solid #FF0000;
+    margin-bottom: 0;
+}
+
+.popup__field_inactive:last-of-type {
+    margin: 11px 34px 5px;
+}
+
+@media screen and (max-width: 620px) {
+    .popup__field_inactive {
+        margin: 0 20px 29px;
+        width: 238px;
+    }
+
+    .popup__field_inactive:last-of-type {
+        margin: 0 20px 0px;
+    }
+}

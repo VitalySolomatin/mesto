@@ -169,3 +169,29 @@ popupImageButtonClose.addEventListener('click', () => closePopup(popupImage));
 
 formProfile.addEventListener('submit', submitFormProfileHandler);
 formAdd.addEventListener('submit', submitFormAddHandler);
+
+//закрытие попапа кликом на оверлей----------------------------------------
+const closePopupByClickOnOverlay = function(event) {
+  if (event.target !== event.currentTarget) {
+    return;
+  }
+    closePopup(popupProfile);
+    closePopup(popupAdd);
+    closePopup(popupImage);
+
+};
+
+popupProfile.addEventListener('click', closePopupByClickOnOverlay);
+popupAdd.addEventListener('click', closePopupByClickOnOverlay);
+popupImage.addEventListener('click', closePopupByClickOnOverlay);
+
+//закрытие попапа кликом на Escape----------------------------------------
+const closePopupByClickEscape = function(event) {
+  if (event.keyCode == 27) {
+    closePopup(popupProfile);
+    closePopup(popupAdd);
+    closePopup(popupImage);
+  }
+};
+
+document.addEventListener('keydown', closePopupByClickEscape);

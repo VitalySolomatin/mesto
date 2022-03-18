@@ -8,17 +8,13 @@
     width: 358px;
     border: none;
     border-bottom: 1px solid rgba(0, 0, 0, 0.2);
-    margin: 0 34px 29px;
+    margin: 0 34px 30px;
     padding-bottom: 9px;
 }
 
 .popup__field:focus {
     outline: none;
     box-shadow: 0 0 0 2px darkorange;
-}
-
-.popup__field:last-of-type {
-    margin: 0 34px 0px;
 }
 
 @media screen and (max-width: 620px) {
