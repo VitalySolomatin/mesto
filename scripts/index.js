@@ -26,10 +26,11 @@ const popupImageElement = document.querySelector('.elements__image');
 const bigImage = document.querySelector('.popup__image-full');
 const bigImageText = document.querySelector('.popup__image-full-text');
 
+const keyEscape = 'Escape';
+
 //закрытие попапа кликом на Escape----------------------------------------
 const closePopupByClickEscape = function (event, popup) {
-  const keyEscape = event.keyCode == 27;
-  if (keyEscape) {
+  if (event.key === keyEscape) {
     popupActive(popup);
   }
 };
@@ -64,7 +65,7 @@ const closePopup = function (popup) {
 };
 
 //сброс кнопки сабмита для попапа добавления карточек
-const resetSubmitButtonPopupAdd = function() {
+const resetSubmitButtonPopupAdd = function () {
   submitButton.classList.add('popup__button-submit_inactive');
   submitButton.setAttribute('disabled', true);
 }
