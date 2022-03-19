@@ -6,6 +6,8 @@
     font-size: 12px;
     line-height: 15px;
     margin-left: 34px;
+    margin-top: 5px;
+    display: inline-block;
 }
 
 .popup__field_active:last-of-type {

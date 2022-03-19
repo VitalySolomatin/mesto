@@ -1,4 +1,4 @@
-const obj = {
+const validationConfig = {
     formSelector: '.popup__container',
     inputSelector: '.popup__field',
     submitButtonSelector: '.popup__button-submit',
@@ -7,16 +7,19 @@ const obj = {
     errorClass: 'popup__field_active'
 };
 
-enableValidation(obj);
+enableValidation(validationConfig);
 
-function toggleButtonState(submitButtonSelector, inputs, inactiveButtonClass) {
-    const submitButtonElement = document.querySelectorAll(submitButtonSelector);
-    const hasInvalidInput = inputs.some((input) => {
+const hasInvalidInput = (inputs) => {
+    return inputs.some((input) => {
         return !input.validity.valid;
 
     });
+}
+
+function toggleButtonState(submitButtonSelector, inputs, inactiveButtonClass) {
+    const submitButtonElement = document.querySelectorAll(submitButtonSelector);
     submitButtonElement.forEach(buttonElement => {
-        if (hasInvalidInput) {
+        if (hasInvalidInput(inputs)) {
             buttonElement.classList.add(inactiveButtonClass);
             buttonElement.setAttribute('disabled', true);
         }
@@ -27,6 +30,7 @@ function toggleButtonState(submitButtonSelector, inputs, inactiveButtonClass) {
     })
 
 };
+
 
 function showError(inputErrorClass, input, errorClass) {
     const inputName = input.getAttribute('id');
@@ -45,6 +49,17 @@ function hideError(inputErrorClass, input, errorClass) {
     input.classList.remove(inputErrorClass);
 };
 
+
+function checkInputValidity(inputErrorClass, input, errorClass) {
+    if (!input.validity.valid) {
+        showError(inputErrorClass, input, errorClass);
+    } else {
+        hideError(inputErrorClass, input, errorClass);
+    }
+};
+
+
+
 function enableValidation({ formSelector, inputSelector, submitButtonSelector, inactiveButtonClass, inputErrorClass, errorClass }) {
     //запускаем наложение валидации
     const forms = Array.from(document.querySelectorAll(formSelector));
@@ -58,19 +73,10 @@ function enableValidation({ formSelector, inputSelector, submitButtonSelector, i
 
 
             input.addEventListener('input', e => {
-                //проверяем валидность введенных данных
                 toggleButtonState(submitButtonSelector, inputs, inactiveButtonClass);
 
 
-                if (input.validity.valid) {
-                    //скрываем ошибку под полем
-                    hideError(inputErrorClass, input, errorClass);
-
-                } else {
-                    //показываем ошибку под полем
-                    showError(inputErrorClass, input, errorClass);
-
-                }
+                checkInputValidity(inputErrorClass, input, errorClass);
 
             });
         })
